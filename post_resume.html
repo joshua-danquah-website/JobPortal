@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Resume - JOSHUA Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">JOSHUA Job Portal</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="jobs.html"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                    <li><a href="companies.html"><i class="fas fa-building"></i> Companies</a></li>
+                    <li><a href="post_resume.html" class="active"><i class="fas fa-file-alt"></i> Post Resume</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Messages</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-secondary">Sign in</a>
+                <a href="#" class="btn btn-primary">Join now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="resume-form">
+            <div class="container">
+                <h1>Post Your Resume</h1>
+                <p>Create your professional profile and get discovered by top employers</p>
+
+                <form id="resumeForm" class="resume-form-container">
+                    <div class="form-section">
+                        <h2>Personal Information</h2>
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location *</label>
+                            <input type="text" id="location" name="location" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Professional Summary</h2>
+                        <div class="form-group">
+                            <label for="summary">Professional Summary *</label>
+                            <textarea id="summary" name="summary" rows="4" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Work Experience</h2>
+                        <div id="workExperience">
+                            <div class="experience-entry">
+                                <div class="form-group">
+                                    <label for="jobTitle">Job Title *</label>
+                                    <input type="text" id="jobTitle" name="jobTitle[]" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Company *</label>
+                                    <input type="text" id="company" name="company[]" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="startDate">Start Date *</label>
+                                        <input type="date" id="startDate" name="startDate[]" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="endDate">End Date</label>
+                                        <input type="date" id="endDate" name="endDate[]">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="jobDescription">Job Description *</label>
+                                    <textarea id="jobDescription" name="jobDescription[]" rows="3" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary" onclick="addWorkExperience()">Add Another Experience</button>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Education</h2>
+                        <div id="education">
+                            <div class="education-entry">
+                                <div class="form-group">
+                                    <label for="degree">Degree/Certificate *</label>
+                                    <input type="text" id="degree" name="degree[]" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="institution">Institution *</label>
+                                    <input type="text" id="institution" name="institution[]" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="eduStartDate">Start Date *</label>
+                                        <input type="date" id="eduStartDate" name="eduStartDate[]" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="eduEndDate">End Date</label>
+                                        <input type="date" id="eduEndDate" name="eduEndDate[]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary" onclick="addEducation()">Add Another Education</button>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Skills</h2>
+                        <div class="form-group">
+                            <label for="skills">Skills (comma separated) *</label>
+                            <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, Python, Project Management" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Resume Upload</h2>
+                        <div class="form-group">
+                            <label for="resumeFile">Upload Resume (PDF or DOC) *</label>
+                            <input type="file" id="resumeFile" name="resumeFile" accept=".pdf,.doc,.docx" required>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Submit Resume</button>
+                        <button type="reset" class="btn btn-secondary">Reset Form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>JOSHUA Job Portal</h4>
+                    <p>&copy; 2024 JOSHUA Corporation. All rights reserved.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Top Companies</a></li>
+                        <li><a href="post_resume.html">Post Your Resume</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>123 Job Seeker Lane, Accra, Ghana</p>
+                    <p>Email: asedadanquah5@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

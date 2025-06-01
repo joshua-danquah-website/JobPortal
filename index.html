@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSHUA - Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">JOSHUA Job Portal</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="jobs.html"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                    <li><a href="companies.html"><i class="fas fa-building"></i> Companies</a></li>
+                    <li><a href="post_resume.html"><i class="fas fa-file-alt"></i> Post Resume</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Messages</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-secondary" id="signinBtn">Sign in</a>
+                <a href="#" class="btn btn-primary" id="joinBtn">Join now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Find your next job opportunity</h1>
+                <p>Search through millions of jobs and find your perfect match</p>
+                <div class="search-bar-home">
+                    <input type="text" placeholder="Job title, keywords, or company">
+                    <input type="text" placeholder="Location">
+                    <button type="submit">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-jobs">
+            <div class="container">
+                <h2>Recommended for you</h2>
+                <div class="job-listings">
+                    <div class="job-card">
+                        <div class="job-header">
+                            <img src="images/sse.png" alt="Company Logo" class="company-logo">
+                            <div class="job-info">
+                                <h3>Senior Software Engineer</h3>
+                                <p class="company">Tech Innovators Inc.</p>
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+                            </div>
+                            <button class="btn-save"><i class="far fa-bookmark"></i></button>
+                        </div>
+                        <div class="job-details">
+                            <p class="salary"><i class="fas fa-money-bill-wave"></i> $70,000 - $90,000 P.A.</p>
+                            <p class="job-type"><i class="fas fa-clock"></i> Full-time</p>
+                            <p class="posted"><i class="fas fa-calendar"></i> Posted 2 days ago</p>
+                        </div>
+                        <div class="job-actions">
+                            <a href="job-details.html" class="btn btn-primary">Apply now</a>
+                            <button class="btn btn-secondary"><i class="fas fa-share"></i> Share</button>
+                        </div>
+                    </div>
+
+                    <div class="job-card">
+                        <div class="job-header">
+                            <img src="images/mmg.jpg" alt="Company Logo" class="company-logo">
+                            <div class="job-info">
+                                <h3>Marketing Manager</h3>
+                                <p class="company">Global Solutions Ltd.</p>
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Kumasi, Ghana</p>
+                            </div>
+                            <button class="btn-save"><i class="far fa-bookmark"></i></button>
+                        </div>
+                        <div class="job-details">
+                            <p class="salary"><i class="fas fa-money-bill-wave"></i> Competitive</p>
+                            <p class="job-type"><i class="fas fa-clock"></i> Full-time</p>
+                            <p class="posted"><i class="fas fa-calendar"></i> Posted 1 week ago</p>
+                        </div>
+                        <div class="job-actions">
+                            <a href="job-details.html" class="btn btn-primary">Apply now</a>
+                            <button class="btn btn-secondary"><i class="fas fa-share"></i> Share</button>
+                        </div>
+                    </div>
+
+                    <div class="job-card">
+                        <div class="job-header">
+                            <img src="images/data-analyst.jpg" alt="Company Logo" class="company-logo">
+                            <div class="job-info">
+                                <h3>Data Analyst</h3>
+                                <p class="company">Analytics Hub</p>
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                            </div>
+                            <button class="btn-save"><i class="far fa-bookmark"></i></button>
+                        </div>
+                        <div class="job-details">
+                            <p class="salary"><i class="fas fa-money-bill-wave"></i> $55,000 - $75,000 P.A.</p>
+                            <p class="job-type"><i class="fas fa-clock"></i> Full-time</p>
+                            <p class="posted"><i class="fas fa-calendar"></i> Posted 3 days ago</p>
+                        </div>
+                        <div class="job-actions">
+                            <a href="job-details.html" class="btn btn-primary">Apply now</a>
+                            <button class="btn btn-secondary"><i class="fas fa-share"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="jobs.html" class="btn btn-secondary">View all jobs</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How Joshua Portal Jobs works</h2>
+                <div class="steps">
+                    <div class="step-card">
+                        <i class="fas fa-search fa-3x"></i>
+                        <h3>Search for jobs</h3>
+                        <p>Find jobs that match your skills and interests</p>
+                    </div>
+                    <div class="step-card">
+                        <i class="fas fa-user-circle fa-3x"></i>
+                        <h3>Create your profile</h3>
+                        <p>Build your professional profile to stand out</p>
+                    </div>
+                    <div class="step-card">
+                        <i class="fas fa-paper-plane fa-3x"></i>
+                        <h3>Apply & get hired</h3>
+                        <p>Apply to jobs and connect with employers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>JOSHUA JOB PORTAL</h4>
+                    <p>&copy; 2024 JOSHUA Corporation. All rights reserved.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Top Companies</a></li>
+                        <li><a href="post_resume.html">Post Your Resume</a></li>
+                        <li><a href="#">Career Advice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>123 Job Seeker Lane, Accra, Ghana</p>
+                    <p>Email: asedadanquah5@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sign In Modal -->
+    <div id="signinModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Sign In</h2>
+            <form id="signinForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" data-validate="required email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" data-validate="required" required>
+                        <button type="button" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <span class="btn-text">Sign In</span>
+                    <div class="spinner"></div>
+                </button>
+                <div class="social-signin">
+                    <p>Or sign in with</p>
+                    <div class="social-buttons">
+                        <button type="button" class="btn btn-social btn-google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button type="button" class="btn btn-social btn-linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Join Modal -->
+    <div id="joinModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Join Now</h2>
+            <form id="joinForm" class="auth-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" data-validate="required name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" data-validate="required name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="joinEmail">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="joinEmail" name="email" data-validate="required email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="joinPassword">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="joinPassword" name="password" data-validate="required password" required>
+                        <button type="button" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-meter"></div>
+                        <span class="strength-text">Password strength: <span>Too weak</span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirmPassword" name="confirmPassword" data-validate="required confirmPassword" required>
+                    </div>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <span class="btn-text">Create Account</span>
+                    <div class="spinner"></div>
+                </button>
+                <div class="social-signin">
+                    <p>Or join with</p>
+                    <div class="social-buttons">
+                        <button type="button" class="btn btn-social btn-google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button type="button" class="btn btn-social btn-linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="utils.js"></script>
+    <script src="validation.js"></script>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

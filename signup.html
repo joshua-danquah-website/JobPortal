@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - JobPortal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">JobPortal</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="companies.html">Companies</a></li>
+                    <li><a href="post_resume.html">Post Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="container">
+                <div class="auth-container">
+                    <h1>Create Your Account</h1>
+                    <p>Join our community of job seekers and employers</p>
+
+                    <form class="auth-form" id="signupForm">
+                        <div class="form-section">
+                            <h2>Personal Information</h2>
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h2>Account Security</h2>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required>
+                                <small>Must be at least 8 characters long with numbers and special characters</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h2>Account Type</h2>
+                            <div class="form-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="accountType" value="jobseeker" checked>
+                                    Job Seeker
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="accountType" value="employer">
+                                    Employer
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terms" required>
+                                    I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    Subscribe to our newsletter for job updates and career tips
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                    </form>
+
+                    <div class="social-login">
+                        <p>Or sign up with</p>
+                        <div class="social-buttons">
+                            <button class="btn btn-social btn-google">
+                                <img src="https://via.placeholder.com/20" alt="Google">
+                                Google
+                            </button>
+                            <button class="btn btn-social btn-linkedin">
+                                <img src="https://via.placeholder.com/20" alt="LinkedIn">
+                                LinkedIn
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="auth-footer">
+                        <p>Already have an account? <a href="login.html">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>JobPortal</h4>
+                    <p>&copy; 2025 JobPortal. All rights reserved.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Top Companies</a></li>
+                        <li><a href="post_resume.html">Post Your Resume</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>123 Job Seeker Lane, Accra, Ghana</p>
+                    <p>Email: asedadanquah5@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="https://via.placeholder.com/24/0000FF/FFFFFF?text=FB" alt="Facebook"></a>
+                        <a href="#"><img src="https://via.placeholder.com/24/008000/FFFFFF?text=LI" alt="LinkedIn"></a>
+                        <a href="#"><img src="https://via.placeholder.com/24/FF0000/FFFFFF?text=TW" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
